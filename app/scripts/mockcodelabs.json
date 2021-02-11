@@ -1,16 +1,16 @@
 [{
-  "title": "Codelab 1",
-  "summary": "This is some nice summary text.",
-  "duration": 30,
-  "categoryClass": "web"
+  "title": "YAcademy 1",
+  "summary": "This an example module",
+  "duration": 60,
+  "categoryClass": "smart contracts"
 }, {
-  "title": "Codelab 2",
+  "title": "YAcademy 2",
   "summary": "This is some nice summary text.",
   "duration": 20,
-  "categoryClass": "android"
+  "categoryClass": "dapps"
 }, {
-  "title": "Codelab 3",
+  "title": "YAcademy 3",
   "summary": "This is some nice summary text.",
-  "duration": 60,
-  "categoryClass": "cloud"
+  "duration": 30,
+  "categoryClass": "defi"
 }]
