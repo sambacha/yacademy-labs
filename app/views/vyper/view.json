@@ -1,0 +1,10 @@
+{
+  "title": "Vyper",
+  "description": "Come learn about Vyper, one of the programming languages for the Ethereum Virtual Machine..",
+  "logoUrl": "/vyper/vyper-logo.jpg",
+  "tags": ["vyper"],
+  "exclude": [
+    ".*-about$",
+    "^lang-.*"
+  ]
+}
