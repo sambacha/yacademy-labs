@@ -17,7 +17,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="generator" content="{{view.title}}">
   <meta name="application-name" content="{{view.title}}">
   <link rel="canonical" href="{{canonicalViewUrl(view)}}" />
-  <link rel="preconnect" href="https://www.google-analytics.com" />
+
 
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -28,7 +28,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     ga('view.send', 'pageview');
     {% endif %}
   </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- FIXME 
+  removed google analytics for now 
+  https://www.google-analytics.com/analytics.js
+  -->
+  <script async src='#'>
+  </script>
 
   <title>{{view.title}}</title>
 
@@ -61,15 +66,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#455a64">
   <meta name="apple-mobile-web-app-title" content="{{view.title}}">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="194x194" href="/images/favicons/favicon-194x194.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#455a64">
   <meta name="msapplication-TileColor" content="#455a64">
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+
   <meta name="theme-color" content="#455a64">
 
   <meta name="og:type" property="og:type" content="website" />
@@ -116,16 +125,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <header id="banner" {% if view.id != 'default' -%}down{%- else %}down$="[[_toBoolean(selectedFilter)]]"{%- endif %}>
       <div class="site-width">
         {% if view.id == 'default' %}
-        <h2 class="banner-title">Welcome to Codelabs!</h2>
+        <h2 class="banner-title">Welcome to YAcademy Labs!</h2>
         <div class="banner-description"
              data-filter-selected$="{% raw %}[[_toBoolean(selectedFilter)]]{% endraw %}">
           <p class="banner-info">
-            Codelabs provide a guided, tutorial, hands-on
-            coding experience. Most codelabs will step you through the process
-            of building a small application, or adding a new feature to an
-            existing application.
+            To understand Yearn one must first understand two basic premises of
+            DeFi. DeFi provides individuals access to financial instruments
+            traditionally reserved for high net worth individuals and regulated
+            financial institutions DeFi provides individuals the opportunity to
+            perform financial activities traditionally reserved for both public and
+            private global financial institutions In short, DeFi provides
+            individuals with unprecedented financial freedom. However, the challenge
+            with this freedom is that finance can oftentimes be very complex. And
+            with opportunities abound it may be hard for people to decide what to
+            do. From these premises Yearn fundamentally asks, “what would a
+            crypto-native 21st century wealth management solution look like?”
             <br>
-            <a href="https://github.com/googlecodelabs/tools">Codelab tools on GitHub</a>
+            <a href="https://github.com/sambacha/defisec">YAcademy tools on GitHub</a>
           </p>
         {%- else -%}
           <div class="banner-description">
@@ -240,25 +256,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="link-list">
           <label>Connect</label>
           <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="#">Example</a></li>
           </ul>
         </div>
         <div class="link-list">
           <label>Programs</label>
           <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="#">Example</a></li>
           </ul>
         </div>
         <div class="link-list">
           <label>Developer Consoles</label>
           <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="#">Example</a></li>
           </ul>
         </div>
         <div class="link-list">
           <label>Explore</label>
            <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="#">Example</a></li>
           </ul>
         </div>
       </div>
@@ -267,9 +283,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="footerbar">
       <div class="site-width layout horizontal center justified">
         <span>
-          <a href="https://example.com">Terms</a>
+          <a href="#">Terms</a>
           &nbsp; | &nbsp;
-          <a href="https://example.com">Privacy</a>
+          <a href="#">Privacy</a>
         </span>
       </div>
     </div>
