@@ -1,7 +1,7 @@
 {
   "title": "YAcademy",
-  "description": "YAcademy provide a guided, tutorial, hands-on coding experience. YAcademy will step you through the process of building on the ethereum network"
-  "tags": [],
+  "description": "YAcademy provide a guided, tutorial, hands-on coding experience. YAcademy will step you through the process of building on the ethereum network",
+  "tags": [ "solidity", "ethereum", "yearn", "defi", "smart contracts"],
   "categories": [],
   "exclude": [
     "^lang-.*"
